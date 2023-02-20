@@ -17,49 +17,171 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body>
     <div id="root"></div>
     <header>
-      <div class="logo">
+      <!-- <div class="logo">
         <i class="fa fa-stethoscope"></i>
-      </div> 
+      </div>  -->
       <nav class = "nav-option">
-        <a href="#">Home</a>
-        <a href="#">Our Services</a>
-        <a href="#">Testimonial</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">DOCTOR</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
       </nav>
-      <div class="menu-icons">
+      <!-- <div class="menu-icons">
         <i id="menu-bar" style="color: white;" class="fa fa-bars" aria-hidden="true"  ></i>
-        <i id="search-box" style="color: white;" class="fa fa-search" aria-hidden="true"  ></i>
-      </div>
+        <i id="search-box" style="color: white; padding-top: 3%;" class="fa fa-search" aria-hidden="true"  ></i>
+      </div> -->
     </header>
 
     <div class="media" style="justify-content:space-around;">
       <div class="home-back">
-        <img style="padding-top: 13vh; width: 25vw ; height: 35vh ; top: 0 ; left: 0 ; position: absolute; opacity: 0.2;" src="/Media/home_Back.png">
+        <img style=" padding-top: 13vh; width: 30vw ; height: 60vh ; top: 0 ; left: 0 ; position: absolute; opacity: 0.2;" src="/Media/home_Back.png">
       </div>
       <div>
-      <div style="padding-top: 43vh ; line-height: 1.5; ">
+      <div style="padding-top: 33vh ; line-height: 1.5; ">
         <div style="font-size: 25px ;">Hello!</div>
         <div style="font-size: 50px ; color: steelblue; font-weight: 500;">I'm Lisa</div>
         <div style="font-size: 30px;">Your Health Care Assistant , How can I help you?</div>
         <div style="font-size: 30px;">Start consultaion by clicking button</div>
       </div>
       <div class="play-btn">
-        <a  href="#"></i></a>
-        
+        <a  href="#"></a>  
       </div>
     </div>
       <div>
-        <img style="height: 90vh ; width: 40vw; padding-top: 10vh ;" src="/Media/doctor.jpg">
+        <img style="height: 90vh ; width: 40vw; padding-top: 10vh ;" src="\Media\doctor.jpg">
       </div> 
     </div>
 
+    <div class="services">
+      <div class="serives-heading">
+        <h1>Our <span>Services</span></h1>
+      </div>
+      <div class="main-services">
+      
+          <div class="main-inner-services">
+            <div class="service-img">
+              <img src="\Media\service_1.jpg" alt="">
+            </div>
+            <div class="services-content">
+              <h2>Enquiry</h2>
+              <p>"Have a question about our medical practice or want to schedule an appointment? You've come to the right place. Contact us today to learn more about our personalized, patient-focused helath care."</p>
+              <a href="#">Read more</a>
+            </div>
+        </div>
+        
+
+        <div class="main-inner-services">
+          <div class="service-img">
+            <img src="\Media\service_2.jpg" alt="">
+          </div>
+          <div class="services-content">
+            <h2>Medical consultaion </h2>
+            <p>"Need medical advice or have questions about your health? We offer a 24*7 wide range of medical services and treatments. Contact us to learn more about how we can help you achieve optimal health."
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+        <div class="main-inner-services">
+          <div class="service-img">
+            <img src="\Media\service_3.jpg" alt="">
+          </div>
+          <div class="services-content">
+            <h2>Heart Attack Prediction</h2>
+            <p>"Don't wait until it's too late, Prevent heart attacks before they happen with our cutting-edge predictive technology. Find out your risk level and take proactive steps to protect your heart health."</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+        <div class="main-inner-services">
+          <div class="service-img">
+            <img src="\Media\service_4.jpg" alt="">
+          </div>
+          <div class="services-content">
+            <h2>Medicine Prescription</h2>
+            <p>"Looking for convenient, reliable online medication prescriptions? we provides easy access to personalized medication recommendations tailored to your unique health needs, all from the comfort of your own home."</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="main-inner-services">
+          <div class="service-img">
+            <img src="\Media\service_5.jpg" alt="">
+          </div>
+          <div class="services-content">
+            <h2>Diet Plan</h2>
+            <p>"Fuel your body, nourish your soul with our comprehensive meal plans diet plan, designed to help you achieve your health and wellness goals by providing customized meal plans & nutritional advice."</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+        <div class="main-inner-services">
+          <div class="service-img">
+            <img src="\Media\service_6.jpg" alt="">
+          </div>
+          <div class="services-content">
+            <h2>Skin Analysis</h2>
+            <p>"Are you dealing with a skin issue or simply looking to maintain optimal skin health? We uses advanced technology to assess your skin health and provide personalized plan for achieving a radiant complexion."</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="our-experts">
+      <div class="experts-heading">
+          <h1>Meet <span>Our</span> Experts</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="Media/expert_1.jpg" alt="">
+                  <h3>Dr.Elina D'suoza</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="Media/expert_2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="Media/expert_3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="Media/expert_4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
 
 
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
   </body>
 </html>
