@@ -2,7 +2,7 @@
   text-align: center;
 }
 body{
-  font-family:sans-serif;
+  font-family:Arimo;
 }
 header{
   
@@ -15,7 +15,7 @@ header{
   display:flex;
   justify-content: space-around; 
   background-attachment: scroll;
-  box-shadow: 4px 4px 6px rgb(170, 169, 169);
+  box-shadow: 4px 4px 6px rgb(221, 221, 221);
 }
 .menu-icons div-cog {
   color: black;
@@ -36,17 +36,16 @@ header{
   font-size: medium;
   text-decoration: none;
   margin:  1.5rem; 
-
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
 }
+
+
 .nav-option{
- padding-left: 50%;
+ padding-left: 35%;
  /* padding-right: 10%; */
  padding-top: 1.1%;
  padding-bottom: 0.8%;
@@ -57,9 +56,9 @@ header{
  display: none;
 }
 .logo i {
-  color: steelblue;
+  color: red;
   padding-left: 30px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* .home{
@@ -98,10 +97,10 @@ header{
   flex: 1;
   padding-top: 50vh;
 }
-.media img{
+/* .media img{
   width: 30vh;
   height: 30vh;
-}
+} */
 
 
 
@@ -202,7 +201,7 @@ header{
   text-align: center;
   font-size: 40px;
 
-  padding-top: 5rem;
+  padding-top: 9rem;
 }
 
 .serives-heading h1 span{
@@ -214,6 +213,7 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 
 }
 
@@ -246,7 +246,7 @@ header{
   }
 
   .services-content p{
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
   .services-content a{
     padding: 0.3rem 0.5rem; 
@@ -288,6 +288,8 @@ text-align: justify;
 .our-experts{
   /* padding: 0.8rem; */
   width: 100%;
+
+  /* background-color: rgb(168, 167, 167); */
 }
 .experts-heading{
  text-align: center;
@@ -304,6 +306,15 @@ text-align: justify;
   width: 100%;
   height: 100%;
 }
+.swiper-wrapper{
+  padding-bottom: 3rem;
+}
+.expert-content h4{
+   font-size: 30px;
+   font-weight: 300;
+    color: steelblue;
+    /* padding: 2rem 0; */ 
+}
 
 .swiper-slide {
   text-align: center;
@@ -312,18 +323,158 @@ text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
+  
 }
 
 .swiper-slide img {
+  padding-top: 0.8rem;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+/* .swiper-mySwiper{
+  padding-bottom: 9rem;
+} */
 
 .our-experts{
-  padding-top: 9rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: #ebeaea;
 }
+.our-experts .experts-heading h1{
+  padding-bottom: 3rem;
+}
+.social-media{
+  font-size: 22px;
+}
+.social-media i{
+  margin: 0rem 0.5rem ;
+  color: white;
+  background-color: steelblue;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: 0.10s;
+  font-size: 1rem;
+}
+.social-media i:hover{
+  transform: scale(1.1) rotate(360deg);
+  /* transform: scale(1.1) ; */
+  /* font-size: 22px; */
+  cursor: pointer;
+}
+.swiper-image img{
+  height: 45vh;
+  width: 30vw;
+}
+ 
+
+/* .review .review-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+} */
+
+.review .review-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.review .review-container .box{
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 1rem solid white;
+  /* box-shadow: -.5rem 1rem rgb(155, 154, 154); */
+  border-radius: 0.5rem;
+  flex: 1  1 30rem;
+  background: rgb(214, 224, 232);
+  margin-top: 4rem;
+  box-shadow: 0 0 5px 5px rgb(204, 203, 203);
+  border-bottom-right-radius: 15px;
+}
+
+.review .review-container .box img{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: 0.5rem solid rgb(255, 255, 255);
+  margin-top: -6rem;
+  object-fit:cover;
+
+}
+.review h1{
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  font-size: 40px;
+  text-align: center;
+}
+.review h1 span{
+  color: steelblue;
+}
+.review .review-container .box .customer-name{
+  font-size: 20px;
+  color: rgb(66, 124, 171);
+
+  /* padding: 0.5rem 0; */
+}
+.review .review-container .box .stars i{
+  font-size: 20px;
+  color: rgb(102, 102, 102);
+  /* padding: 0.5rem 0; */
+}
+
+.review .review-container .box .customer-review{
+  font-size: 15px;
+  color: black;
+  /* padding: 0.3rem 0; */
+  text-align: justify;
+  line-height: 1.3rem;
+  margin: 50px;
+  /* flex: 10%; */
+  background-color: rgb(214, 224, 232);
+  position: relative;
+}
+
+.contact-details{
+  margin-top: 5rem;
+}
+
+.footer{
+  padding-top: 6rem;
+  padding: 3rem 7%;
+  background-color: rgb(113, 156, 192);
+  color: white;
+  height: 30vh;
+}
+.main-footer{
+   display: block;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+
+}
+.main-inner-footer{
+  flex: 1 1 300px;
+}
+
+.footer-heading{
+  font-size: 30px;
+  color: white;
+}
+.candidate a{
+  display: block;
+  padding: 0.5rem;
+  font-size: 15px;
+
+  
+}
+
 
 @media (max-width:768px) {
   html{
@@ -347,9 +498,8 @@ text-align: justify;
    .nav-option a{
     display: flex;
     align-items: center;
-  
- padding: 1.5rem;
- margin: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
    }
 }
 

@@ -22,16 +22,21 @@
   </head>
   <body>
     <div id="root"></div>
-    <header>
-      <!-- <div class="logo">
-        <i class="fa fa-stethoscope"></i>
-      </div>  -->
+    <header id="home">
+      <div class="logo">
+        <!-- <i class="fa fa-stethoscope"></i> -->
+        <!-- <i class="fa fa-plus"></i> -->
+        <!-- <i class="fa fa-solid fa-plus"></i> -->
+      </div> 
       <nav class = "nav-option">
-        <a href="#">HOME</a>
-        <a href="#">SERVICES</a>
-        <a href="#">DOCTOR</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
+        <a href="#home">HOME</a>
+        <a href="#services">SERVICES</a>
+        <a href="#doctor">DOCTOR</a>
+        <a href="#testimonial">TESTIMONIAL</a>
+        <a href="#contact">CONTACT</a>
+        <!-- <div class="home-back">
+          <img style=" padding-top: 13vh; width: 30vw ; height: 60vh ; top: 0 ; left: 0 ; position: absolute; opacity: 0.2; overflow: hidden;;" src="/Media/home_Back.png">
+        </div> -->
       </nav>
       <!-- <div class="menu-icons">
         <i id="menu-bar" style="color: white;" class="fa fa-bars" aria-hidden="true"  ></i>
@@ -44,7 +49,7 @@
         <img style=" padding-top: 13vh; width: 30vw ; height: 60vh ; top: 0 ; left: 0 ; position: absolute; opacity: 0.2;" src="/Media/home_Back.png">
       </div>
       <div>
-      <div style="padding-top: 33vh ; line-height: 1.5; ">
+      <div style="padding-top: 33vh; line-height: 1.5; ">
         <div style="font-size: 25px ;">Hello!</div>
         <div style="font-size: 50px ; color: steelblue; font-weight: 500;">I'm Lisa</div>
         <div style="font-size: 30px;">Your Health Care Assistant , How can I help you?</div>
@@ -55,11 +60,12 @@
       </div>
     </div>
       <div>
-        <img style="height: 90vh ; width: 40vw; padding-top: 10vh ;" src="\Media\doctor.jpg">
+        <!-- <img style="height: 90vh ; width: 40vw; padding-top: 10vh ;" src="Media\doctor.jpg"> -->
+        <img style=" padding-top: 20vh ;" src="Media/doctor_2.png">
       </div> 
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="serives-heading">
         <h1>Our <span>Services</span></h1>
       </div>
@@ -134,7 +140,7 @@
 
       </div>
     </div>
-    <div class="our-experts">
+    <div id="doctor" class="our-experts">
       <div class="experts-heading">
           <h1>Meet <span>Our</span> Experts</h1>
           <div class="swiper mySwiper">
@@ -142,32 +148,147 @@
               <div class="swiper-slide">
                 <div class="swiper-image">
                   <img src="Media/expert_1.jpg" alt="">
-                  <h3>Dr.Elina D'suoza</h3>
+                  <div class="expert-content">
+                    <h4>Dr.Elina D'suoza</h4>
+                    <div class="social-media">
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-image">
                   <img src="Media/expert_2.jpg" alt="">
+                  <div class="expert-content">
+                    <h4>Dr. Mae Czerniak</h4>
+                    <div class="social-media">
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-image">
                   <img src="Media/expert_3.jpg" alt="">
+                  <div class="expert-content">
+                    <h4>Dr. Riya Reddy</h4>
+                    <div class="social-media">
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
+    
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-image">
                   <img src="Media/expert_4.jpg" alt="">
+                  <div class="expert-content">
+                    <h4>Dr. Mark Mount</h4>
+                    <div class="social-media">
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
+             
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="Media/expert_5.jpg" alt="">
+                  <div class="expert-content">
+                    <h4>Dr. Ethel Tandon</h4>
+                    <div class="social-media">
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
-
         </div>
 
       </div>
+    <!-- </div> -->
+    <section class="review" id="testimonial">
+      <h1 class="heading">Our Customers <span>Reviews</span></h1>
+
+        <div class="review-container">
+
+          <div class="box">
+            <img src="Media/review_1.jpg" alt="">
+            <div class="customer-name">Johnie Doe</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> 
+              
+            </div>
+            <div class="customer-review">"As someone who has trouble typing, I was thrilled to find a website that had a voice bot to help me with my healthcare needs. The bot was able to help me make an online consultation appointment quickly and easily, and it was incredibly helpful in predicting my risk of heart attacks.I would definitely recommend this website'</div>
+          </div>
+
+          <div class="box">
+            <img src="Media/review_2.jpg" alt="">
+            <div class="customer-name" >Lia Zuniga</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="customer-review">"I was pleasantly surprised by how easy it was to use the voice bot on this website. I had a few questions about online consultations and the bot was able to answer them quickly and accurately. I also really appreciated the feature that helps predict heart attacks and suggests diet plans based on my health history.This website is a great resource"</div>
+          </div>
+
+          <div class="box">
+            <img src="Media/review_3.jpg" alt="">
+            <div class="customer-name">Justice Hill</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="customer-review">"I recently used this voice bot to book an appointment with a healthcare professional and I couldn't be happier with how smoothly the process went. it was able to guide me through the appointment booking process step by step. I also appreciated the helpful tips on diet and exercise that were provided after the booking was complete."</div>
+          </div>
+
+        </div>
+    </section>
+    <!-- <div class="contact-details" id="contact">
+      <h1>contact</h1>
+    </div> -->
+
+    <div class="footer" id="contact">
+      <div class="main-footer">
+        <div class="main-inner-footer"></div>
+          <!-- <div class="footer-heading">Health Care Assistant</div> -->
+          
+          <div class="candidate">
+          <a >Presented By:</a>
+          <a >1.Atharv Kare</a>
+          <a >2.Kalyani Chaudhari</a>
+          <a >3.Ragini Deshpande</a>
+          <a >4.Kaushal Ostwal</h4>
+          </div>
+        
+      </div>
+  
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
