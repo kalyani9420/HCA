@@ -9,8 +9,9 @@ header{
   background-color: white;
   width: 100%;
   z-index: 1000;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 0.5%;
+  padding-left: 45%;
+  padding-bottom: 0.5%;
   position: fixed;
   display:flex;
   justify-content: space-around; 
@@ -27,13 +28,15 @@ header{
     margin-left: 1.5rem;
     
 }
-.home-back img{
+/* .home-back img{
   transform: none;
-}
-.nav-option a{
+  height: 25vh;
+  width: 50vw;
+} */
+/* .nav-option a{
   text-decoration: none;
   color: steelblue;
-  font-size: medium;
+  font-size: 20px;
   text-decoration: none;
   margin:  1.5rem; 
   width: 100%;
@@ -46,11 +49,98 @@ header{
 
 .nav-option{
  padding-left: 35%;
- /* padding-right: 10%; */
+ padding-right: 10%;
  padding-top: 1.1%;
  padding-bottom: 0.8%;
 
+} */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.menu {
+
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0 100px;
+  background: white;
+  color: steelblue;
+}
+
+.menu a {
+  padding-left: 45%;
+  height: 60%;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: steelblue;
+  text-decoration: none;
+}
+
+.menu a::before,
+.menu a::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+
+
+.menu1 a::before,
+.menu1 a::after {
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  bottom: 0%;
+  right: 0%;
+}
+
+
+.menu1 a::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+
+.menu1 a::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.menu1 a:hover {
+  color: steelblue;
+}
+
+.menu1 a:hover::before,
+.menu1 a:hover::after {
+  border-color: steelblue;
+  transition: border-color 0s, width 0.3s, height 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.menu1 a:hover::before {
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.menu1 a:hover::after {
+  transition-delay: 0s, 0.3s, 0s;
+}
+
 
 #menu-bar{
  display: none;
@@ -61,32 +151,6 @@ header{
   font-size: 40px;
 }
 
-/* .home{
-  padding-top: 2rem 7%;
-  display: flex;
-} */
-/* .home .main-home{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 6% ;
-}
-.main-inner-home{
-  flex: 1 1 45rem;
-}
-.main-inner-home .left-content-img img{
-  width: 100%;
-} */
-/* .home{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 25vh ;
-}
-.main-inner-home .left-content-img img{
-  width: 100%;
-  height: 100%;
-} */
 
 .media {
   display: flex;
@@ -97,12 +161,6 @@ header{
   flex: 1;
   padding-top: 50vh;
 }
-/* .media img{
-  width: 30vh;
-  height: 30vh;
-} */
-
-
 
  
 
@@ -157,6 +215,8 @@ header{
   top: -30%;
   left: -30%;
   background: rgba(198, 16, 0, 0);
+  background: radial-gradient( rgb(106, 152, 189) 60%, rgba(255, 255, 255, 1) 62%);
+
 }
 
 @-webkit-keyframes pulsate1 {
@@ -223,12 +283,13 @@ header{
     /* flex: 10%; */
     background-color: rgb(214, 224, 232);
     position: relative;
-    box-shadow:  8px 8px 6px rgb(204, 203, 203);
-    border-bottom-right-radius: 15px;
+    box-shadow:  0 0 8px 8px rgb(204, 203, 203);
+    /* border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
     
 }
 .main-inner-services .service-img img{
-  width: 406px;
+  width: 100%;
   height: 300px;
   /* border-radius: 10%; */
   justify-content: center;
@@ -243,10 +304,13 @@ header{
 
   .services-content h2{
     font-size: 22px;
+    padding-bottom: 0.5rem;
   }
 
   .services-content p{
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+
   }
   .services-content a{
     padding: 0.3rem 0.5rem; 
@@ -312,6 +376,7 @@ text-align: justify;
 .expert-content h4{
    font-size: 30px;
    font-weight: 300;
+   padding-bottom: 1rem;
     color: steelblue;
     /* padding: 2rem 0; */ 
 }
@@ -435,7 +500,7 @@ text-align: justify;
   /* padding: 0.3rem 0; */
   text-align: justify;
   line-height: 1.3rem;
-  margin: 50px;
+  margin: 15px;
   /* flex: 10%; */
   background-color: rgb(214, 224, 232);
   position: relative;
@@ -502,5 +567,4 @@ text-align: justify;
     margin: 1rem;
    }
 }
-
 
