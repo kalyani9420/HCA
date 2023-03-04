@@ -278,7 +278,7 @@ header{
 }
 
 .main-inner-services{
-  flex: 1 1 300px;
+  flex: 1 1 400px;
     margin: 50px;
     /* flex: 10%; */
     background-color: rgb(214, 224, 232);
@@ -308,8 +308,8 @@ header{
   }
 
   .services-content p{
-    line-height: 1.5rem;
-    padding-bottom: 0.5rem;
+    line-height: 1rem;
+    padding-bottom: 0.8rem;
 
   }
   .services-content a{
